@@ -1,0 +1,194 @@
+{
+    "profile": {
+      "name": "Silvio Christian Joe",
+      "short_name": "Vio",
+      "role": "Data Scientist & AI Engineer",
+      "specialization": "Natural Language Processing (NLP) & Tabular Data Analysis",
+      "university": "Universitas Dian Nuswantoro (UDINUS)",
+      "current_semester": 5,
+      "location": "Semarang, Central Java, Indonesia",
+      "summary": "I am a 5th-semester Informatics Engineering undergraduate driven by curiosity to turn raw data into meaningful stories. I specialize in mining insights from structured numbers (Tabular) and unstructured language (NLP). My approach goes beyond algorithms; I focus on rigorous preprocessing, handling class imbalances (SMOTE/SMOTENC), and building end-to-end solutions from training to API deployment.",
+      "availability": "Seeking Internship Opportunities",
+      "quote": "Data is the new oil, but it’s useless without the engine to refine it."
+    },
+    "contact": {
+      "email": "viochristian12@gmail.com",
+      "phone": "+62 895 3426 37871",
+      "linkedin": "https://www.linkedin.com/in/silvio-christian-joe/",
+      "github": "https://github.com/viochris",
+      "address": "Jalan Bintoro VIIA No. 23A, Semarang",
+      "cv_download": "https://github.com/viochris/viochris/raw/main/CV_Silvio_Christian_Joe_Data_Scientist.pdf"
+    },
+    "education": [
+      {
+        "institution": "Universitas Dian Nuswantoro (UDINUS)",
+        "degree": "Bachelor of Informatics Engineering",
+        "focus": "Data Science (NLP & Tabular Data)",
+        "start_date": "August 2023",
+        "end_date": "Present (Expected 2027)",
+        "status": "Undergraduate Student"
+      },
+      {
+        "institution": "SMA Kristen YSKI",
+        "degree": "High School Diploma, Science",
+        "start_date": "July 2020",
+        "end_date": "May 2023"
+      }
+    ],
+    "skills": {
+      "languages": ["Python", "SQL"],
+      "data_science": [
+        "Exploratory Data Analysis (EDA)",
+        "Feature Engineering",
+        "Model Building",
+        "Pandas",
+        "NumPy",
+        "Scikit-Learn",
+        "TensorFlow"
+      ],
+      "nlp_and_genai": [
+        "Text Classification",
+        "Sentiment Analysis",
+        "RAG (Retrieval-Augmented Generation)",
+        "LangChain",
+        "Hugging Face Transformers",
+        "Google Gemini API",
+        "Agentic Workflows (ReAct)"
+      ],
+      "tabular_data": [
+        "Handling Imbalanced Datasets (SMOTE/SMOTENC)",
+        "Preventing Data Leakage",
+        "Model Interpretability",
+        "XGBoost",
+        "Random Forest"
+      ],
+      "web_and_api": [
+        "FastAPI",
+        "Flask",
+        "Streamlit",
+        "RESTful API Development",
+        "Swagger UI"
+      ],
+      "tools_and_cloud": [
+        "Git/GitHub",
+        "Oracle Cloud Infrastructure (OCI)",
+        "Google Colab",
+        "Kaggle",
+        "Jupyter Notebooks"
+      ],
+      "soft_skills": [
+        "Analytical Thinking",
+        "Problem Solving",
+        "Technical Documentation",
+        "Research Implementation"
+      ]
+    },
+    "projects": [
+      {
+        "name": "DocuTalk-AI (Smart RAG)",
+        "domain": "GenAI / RAG",
+        "role": "Creator",
+        "link": "https://github.com/viochris/DocuTalk-AI",
+        "tech_stack": ["LangChain", "Gemini 2.5 Flash", "FAISS", "Streamlit"],
+        "description": "An intelligent document assistant using Agentic Workflow (ReAct). It autonomously decides between retrieving information from uploaded documents (PDF, CSV, TXT, MD) or performing a Web Search. Features incremental indexing for cost efficiency and strict language control."
+      },
+      {
+        "name": "Stuntify API",
+        "domain": "API / MLOps",
+        "role": "ML Engineer",
+        "link": "https://github.com/viochris/Stuntify-API",
+        "tech_stack": ["FastAPI", "Pydantic", "Scikit-Learn"],
+        "description": "A high-performance inference engine serving real-time stunting predictions. Designed with strict Type Coercion, multi-artifact orchestration, and interactive Swagger documentation."
+      },
+      {
+        "name": "Insightify API",
+        "domain": "NLP / API",
+        "role": "Developer",
+        "link": "https://github.com/viochris/Insightify-Sentiment-API",
+        "tech_stack": ["FastAPI", "Transformers (RoBERTa)", "Pandas"],
+        "description": "A dual-lingual (English & Indonesian) NLP microservice for sentiment analysis. Supports batch processing (Excel/CSV) and N-Gram keyword extraction."
+      },
+      {
+        "name": "DocuChat AI (Long Context)",
+        "domain": "GenAI / LLM",
+        "role": "Developer",
+        "link": "https://github.com/viochris/Gemini-Long-Context-Chat",
+        "tech_stack": ["Gemini 2.5 Flash", "Streamlit", "Python"],
+        "description": "An alternative to RAG that analyzes entire PDFs without chunking by leveraging Gemini's massive context window. Features real-time token monitoring."
+      },
+      {
+        "name": "Diabetes Prediction (Robust)",
+        "domain": "Tabular Data",
+        "role": "Data Scientist",
+        "link": "https://github.com/viochris/Diabetes-prediction-fine-tuned-project",
+        "tech_stack": ["Scikit-Learn", "SMOTE", "Python"],
+        "description": "A best-practice implementation of a predictive model ensuring NO data leakage by applying Scaling & SMOTE techniques specifically *after* data splitting."
+      },
+      {
+        "name": "AI Recipe Generator",
+        "domain": "GenAI / Agent",
+        "role": "Developer",
+        "link": "https://github.com/viochris/ai-recipe-generator",
+        "tech_stack": ["LangChain", "Gemini", "Streamlit"],
+        "description": "An agentic app that orchestrates a cooking assistant using LangChain ReAct Agents. It can detect ingredients from images (Vision) and generate recipes with conversation memory."
+      },
+      {
+        "name": "Stunting Prediction & Analysis",
+        "domain": "Tabular Data",
+        "role": "Data Scientist",
+        "link": "https://github.com/viochris/Stunting-prediction-project",
+        "tech_stack": ["SMOTENC", "Decision Trees", "Python"],
+        "description": "Developed a robust machine learning model to predict stunting risks. Handled categorical imbalance using SMOTENC and utilized Pruned Tree visualization for model interpretability."
+      },
+      {
+        "name": "Conversational AI Companion",
+        "domain": "NLP",
+        "role": "Developer",
+        "link": "https://github.com/viochris/Simple-AI-Girlfriend",
+        "tech_stack": ["Python", "NLP Logic"],
+        "description": "Designed an interactive conversational agent leveraging NLP techniques to simulate empathetic, human-like dialogue and context-aware responses."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Oracle AI Vector Search Certified Professional",
+        "issuer": "Oracle",
+        "year": "2025"
+      },
+      {
+        "name": "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+        "issuer": "Oracle",
+        "year": "2025"
+      },
+      {
+        "name": "Supervised Machine Learning: Regression",
+        "issuer": "Coursera (IBM)",
+        "year": "2025"
+      },
+      {
+        "name": "Supervised Machine Learning: Classification",
+        "issuer": "Coursera (IBM)",
+        "year": "2025"
+      },
+      {
+        "name": "Code Generation and Optimization Using IBM Granite",
+        "issuer": "IBM",
+        "year": "2025"
+      },
+      {
+        "name": "Artificial Intelligence Essentials V2",
+        "issuer": "Certiport / Relevant Body",
+        "year": "2025"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Indonesian",
+        "proficiency": "Native / Bilingual"
+      },
+      {
+        "language": "English",
+        "proficiency": "Professional Working Proficiency"
+      }
+    ]
+}
