@@ -1,23 +1,10 @@
-import os
 import json
 import streamlit as st
-from google import genai
-from function import init_state, reset_state, change_on_api_key, change_on_lan, load_css, chunking_document
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.agents import AgentExecutor, create_react_agent
-from langchain_community.tools import DuckDuckGoSearchRun
-from langchain.memory import ConversationSummaryMemory
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader, CSVLoader, TextLoader
-from langchain.tools.retriever import create_retriever_tool
-from langchain import hub
-from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain.prompts import PromptTemplate
 from langchain.chains import ConversationalRetrievalChain
-
-import streamlit as st
+from function import init_state, reset_state, change_on_api_key, change_on_lan, load_css, chunking_document
 
 # 1. Page Configuration
 st.set_page_config(
@@ -110,7 +97,7 @@ if load_vec_store and st.session_state.vectorstore is None:
                 # 2. Initialize Embedding Model
                 # FIXED: Updated model name for stability
                 embeddings = GoogleGenerativeAIEmbeddings(
-                    model="models/text-embedding-004",
+                    model="models/gemini-embedding-001",
                     google_api_key=st.session_state.google_api_key
                 )
 
@@ -174,7 +161,7 @@ if st.session_state.qa_chain is None \
         # 2. Initialize LLM (Gemini)
         # FIXED: Updated model name to 1.5 Flash (More stable)
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", 
+            model="gemini-2.5-flash", 
             google_api_key=st.session_state.google_api_key,
             temperature=0.3
         )
