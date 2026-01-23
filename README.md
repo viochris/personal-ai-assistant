@@ -88,7 +88,7 @@ Features a custom "Translator-Representative" prompt injection.
 
 ### 2. Comprehensive Sidebar Controls
 ![Sidebar Settings](assets/sidebar.png)  
-*Full configuration control: Users can securely input API keys, toggle between English and Indonesian responses, and manage data loading.*
+*The remaining part of the sidebar configuration that is not visible in the Home UI screenshot.*
 
 ### 3. Interactive Chat & Context
 ![Active Session](assets/used_ui.png)  
