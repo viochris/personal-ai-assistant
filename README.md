@@ -18,6 +18,11 @@ Unlike generic chatbots, this system is grounded in a specific knowledge base (`
 * **Vector Search:** Uses **FAISS** to index Silvio's profile into vector embeddings.
 * **Contextual Retrieval:** Retrieves only the relevant parts of the profile to answer specific user queries.
 
+### 📊 Transparent RAG Analytics (Similarity Score)
+To demystify the AI's reasoning, the app includes a "Debug Mode" hidden within an expander for every answer.
+* **Metric Visualization:** Calculates and displays the **L2 Distance Score** (Euclidean) for each retrieved document.
+* **Contextual Insight:** Shows the exact source snippet used and its mathematical relevance, where a **lower score indicates a stronger match** (e.g., 0.5 is closer than 1.0), ensuring full transparency of the retrieval process.
+
 ### 🌐 Strict Language Enforcement
 Features a custom "Translator-Representative" prompt injection.
 * **User Control:** Select **English** or **Indonesian** in the sidebar.
@@ -47,7 +52,7 @@ Features a custom "Translator-Representative" prompt injection.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/viochris/personal-ai-assistant.git
+    git clone [https://github.com/viochris/personal-ai-assistant.git](https://github.com/viochris/personal-ai-assistant.git)
     cd personal-ai-assistant
     ```
 
