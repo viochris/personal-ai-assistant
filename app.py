@@ -273,14 +273,16 @@ if prompt := st.chat_input("Ask about Vio's skills, projects, or experience...")
                     # Renamed from 'video evidence' to 'Reference Context' for accuracy
                     if source_docs:
                         with st.expander("🔍 View Reference Context (Debug Info)"):
-                            for i, doc in enumerate(source_docs, 1):
+                            docs_and_scores = st.session_state.vectorstore.similarity_search_with_score(prompt)
+                            for i, (doc, score) in enumerate(docs_and_scores, 1):
                                 # Safe get for metadata source
-                                information_source = doc.metadata.get("source", "Unknown")[-1]
+                                information_source = doc.metadata.get("source", "Unknown").split("/")[-1]
                                 
                                 st.markdown(f"**Evidence {i} - {doc.id}**")
                                 st.caption(f"Source: `{information_source}`")
                                 # formatting as json code block for readability
                                 st.code(doc.page_content, language="json")
+                                st.metric("Similarity Score", score)
                                 st.divider()
 
                     # Save AI Message to History
