@@ -275,9 +275,9 @@ if prompt := st.chat_input("Ask about Vio's skills, projects, or experience...")
                         with st.expander("🔍 View Reference Context (Debug Info)"):
                             for i, doc in enumerate(source_docs, 1):
                                 # Safe get for metadata source
-                                information_source = doc.metadata.get("source", "data/silvio_profile.json")
+                                information_source = doc.metadata.get("source", "Unknown")[-1]
                                 
-                                st.markdown(f"**Evidence {i}**")
+                                st.markdown(f"**Evidence {i} - {doc.id}**")
                                 st.caption(f"Source: `{information_source}`")
                                 # formatting as json code block for readability
                                 st.code(doc.page_content, language="json")
