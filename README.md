@@ -52,7 +52,7 @@ Features a custom "Translator-Representative" prompt injection.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/viochris/personal-ai-assistant.git](https://github.com/viochris/personal-ai-assistant.git)
+    git clone https://github.com/viochris/personal-ai-assistant.git
     cd personal-ai-assistant
     ```
 
